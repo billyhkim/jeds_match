@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <link rel='icon' href='./images/favicon.ico' type='image/x-icon'>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>Jed's Match</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="music.js"></script>
+    <script src="game.js"></script>
+    <script src="stats.js"></script>
+    <script src="main.js"></script>
+  </head>
+  
+  <body class="fadeout">
+    <header id="game-header">
+      <div class="logo"></div>
+    </header>
+
+    <div class="main-area">
+      <div class="game-area"></div>
+    </div>
+
+    <div class="info-wrapper">
+      <div class="info-container">
+        <div class="stats-container">
+          <div class="games-played">
+            <div class="label">Games Played: <div class="value">0</div></div>
+          </div>
+          <div class="attempts">
+            <div class="label">Attempts: <div class="value">0</div></div>
+          </div>
+          <div class="accuracy">
+            <div class="label">Accuracy: <div class="value">0%</div></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="info-container">
+        <div class="btn-container">
+          <button class="reset-btn">Reset</button>
+          <button id="audio-btn" class="audio-play"><i class="fas fa-play"></i></button>
+          <button id="audio-btn" class="audio-mute"><i class="fas fa-stop"></i></button>
+          <button id="about-btn">About</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="my-modal" class="modal">
+      <div class="modal-content animatetop">
+        <span class="close">&times;</span>
+        <img src="images/bio.png" alt="Billy">
+        <div class="modal-font">Thanks for playing this game!</div>
+        <div class="modal-font">My name is Billy and this project was built for my son, Jed.</div>
+        <hr>
+        <div class="modal-font">If you have any questions or feedback, please feel to reach me at billyhkim.dev@gmail.com.</div>
+      </div>
+    </div>
+
+    <div id="win-modal" class="modal">
+      <div class="modal-content-win fadein">
+        <div class="modal-elements-center">
+          <img src="images/win.gif" alt="Win Image">
+          <div class="modal-font">You won, Neighbor!</div>
+          <div class="modal-font">That was Grr-ific!</div>
+          <button class="reset-btn modal-reset-btn">Let's Play Again!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 
