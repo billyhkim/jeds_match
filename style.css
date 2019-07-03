@@ -273,8 +273,8 @@ body.fadeout {
       height: 12vh;
     }
     .image-mod {
-      width: 80%;
-      margin-left: 10%;
+      width: 76%;
+      margin-left: 12%;
     }
 }
 
@@ -292,6 +292,12 @@ body.fadeout {
       height: 95%;
       width: 23%;
       margin: 0 auto;
+    }
+    .image-mod {
+      width: 93%;
+      height: 97%;
+      margin-left: 5%;
+      margin-top: 1.5%;
     }
 }
 
@@ -327,5 +333,9 @@ body.fadeout {
     @keyframes animatetop {
       from {top: -500px; opacity: 0}
       to {top: 2%; opacity: 1}
+    }
+    .image-mod {
+      width: 90%;
+      margin-left: 5%;
     }
 }
