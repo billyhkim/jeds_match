@@ -183,6 +183,9 @@ body.fadeout {
 .modal-elements-center {
   text-align: center;
 }
+.win-modal-image {
+  width: 100%;
+}
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 

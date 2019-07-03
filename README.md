@@ -1,4 +1,6 @@
 # Jed's Match
+* Live Demo: __https://jedsmatch.billyhkim.dev__
+
 ![](jeds_match.gif)
 <hr/>
 A memory-matching card game suitable for children to play that I built for my son, Jed. Users are able to click to match pairs of cards with live updating statistics.
