@@ -21,8 +21,9 @@ class Stats {
   accuracyCalculate(){
     this.accuracy = this.matches / this.attempts;
   }
-  displayWinModal() {
+  displayWinModalandSound() {
     $('#win-modal').css('display', 'block');
+    music.startAudio('win');
   }
   gameReset() {
     game.matchCounter = 0;
