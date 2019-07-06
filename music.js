@@ -4,6 +4,7 @@ class Music {
     this.cardOver = new Audio('audio/cardover.wav');
     this.theme = new Audio('audio/theme.mp3');
     this.cardMatch = new Audio('audio/match.wav');
+    this.win = new Audio('audio/uggamugga.mp3');
     this.startAudio = this.startAudio.bind(this);
     this.stopAudio = this.stopAudio.bind(this);
   }
@@ -24,6 +25,9 @@ class Music {
       case 'match':
       this.cardMatch.play();
       break;
+      case 'win':
+      this.win.play();
+      break;
     }
   }
 
@@ -40,6 +44,9 @@ class Music {
       break;
       case 'match':
       this.cardMatch.pause();
+      break;
+      case 'win':
+      this.win.pause();
       break;
     }
   }

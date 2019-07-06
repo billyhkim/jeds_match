@@ -56,8 +56,7 @@ class Game {
         stats.displayStats();
         $('.flipped').removeClass('flipped back').prev().find('img');
         if(this.matchCounter === this.totalPossibleMatches){ // win
-          // stats.gamesPlayed++;
-          stats.displayWinModal();
+          stats.displayWinModalandSound();
         }
         return;
       } else {
