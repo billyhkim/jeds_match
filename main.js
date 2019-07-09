@@ -12,8 +12,16 @@ function startApp(){
   $('.reset-btn').click(stats.gameReset);
   $('body').removeClass('fadeout');
 
-  $('.audio-play').click(() => music.startAudio('theme'));
-  $('.audio-mute').click(() => music.stopAudio('theme'));
+  $('.audio-play').click(() => {
+    music.startAudio('theme');
+    $('.audio-play').css({'background': '#f6b93b', 'color': '#ffffff', 'border-color': '#f6b93b'});
+    $('.audio-mute').css({'background': '', 'color': '', 'border-color': ''})
+  });
+  $('.audio-mute').click(() => {
+    music.stopAudio('theme');
+    $('.audio-mute').css({'background': '#f6b93b', 'color': '#ffffff', 'border-color': '#f6b93b'});
+    $('.audio-play').css({'background': '', 'color': '', 'border-color': ''})
+  });
   $('#about-btn').click(() => $('#my-modal').css('display', 'block'));
   $('.close').click(() => $('#my-modal').css('display', 'none'));
 }
