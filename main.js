@@ -24,4 +24,5 @@ function startApp(){
   });
   $('#about-btn').click(() => $('#my-modal').css('display', 'block'));
   $('.close').click(() => $('#my-modal').css('display', 'none'));
+  $('.close').click(() => $('#win-modal').css('display', 'none'));
 }

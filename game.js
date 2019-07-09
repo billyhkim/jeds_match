@@ -57,6 +57,7 @@ class Game {
         $('.flipped').removeClass('flipped back').prev().find('img');
         if(this.matchCounter === this.totalPossibleMatches){ // win
           stats.displayWinModalandSound();
+          $('.game-area').off('click', '.back', this.cardClicked);
         }
         return;
       } else {
