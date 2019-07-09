@@ -172,7 +172,9 @@ body.fadeout {
 }
 .close {
   color: #aaa;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 1.3vw;
   font-size: 40px;
   font-weight: bold;
 }
@@ -184,7 +186,8 @@ body.fadeout {
   text-align: center;
 }
 .win-modal-image {
-  width: 100%;
+  width: 87%;
+  top: 5px;
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -219,7 +222,7 @@ body.fadeout {
       height: 15%;
       width: 40%;
     }
-    .modal-content-win {
+    .modal-content-win, .modal-content {
       top: 30%;
     }
 }
@@ -239,12 +242,36 @@ body.fadeout {
       width: 23%;
       margin: 0 auto;
     }
-    .modal-content {
+    .modal-content, .modal-content-win {
       top: 10%;
     }
     @keyframes animatetop {
       from {top: -500px; opacity: 0}
       to {top: 5%; opacity: 1}
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .modal-content {
+      top: 20%;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .modal-content {
+      top: 10%;
     }
 }
 
