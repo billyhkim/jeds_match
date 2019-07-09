@@ -27,13 +27,15 @@ class Stats {
   }
   gameReset() {
     game.matchCounter = 0;
+    game.firstCardClicked = null;
+    game.secondCardClicked = null;
     this.gamesPlayed++;
     this.resetStats();
     this.displayStats();
     $('.game-area').empty();
     game.shuffleCards(game.images);
     game.renderCards();
-    $('.card').click(game.cardClicked);
+    $('.game-area').on('click', '.back', game.cardClicked);
     $('#win-modal').css('display', 'none');
   }
 }
