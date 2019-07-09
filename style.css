@@ -51,7 +51,7 @@ body.fadeout {
   height: 100%;
   width: 100%;
 }
-.reset-btn, #audio-btn, #about-btn {
+.reset-btn, .audio-play, .audio-mute, #about-btn {
   color: #494949;
   background: #d1f1f0;
   border: 2px solid #494949;
@@ -68,7 +68,7 @@ body.fadeout {
   width: 30%;
   height: 31%;
 }
-.reset-btn:hover, #audio-btn:hover, #about-btn:hover {
+.reset-btn:hover, .audio-play:hover, .audio-mute:hover, #about-btn:hover {
   color: #ffffff;
   background: #f6b93b;
   border-color: #f6b93b;
@@ -158,7 +158,7 @@ body.fadeout {
   background-color: #fefefe;
   margin: auto;
   padding: 2%;
-  top: 20%;
+  top: 10%;
   border: 1px solid #888;
   border-radius: 7px;
   width: 60%;
@@ -219,6 +219,9 @@ body.fadeout {
       height: 15%;
       width: 40%;
     }
+    .modal-content-win {
+      top: 30%;
+    }
 }
 
 /* Landscape */
@@ -238,9 +241,6 @@ body.fadeout {
     }
     .modal-content {
       top: 10%;
-    }
-    .modal-content-win {
-      top: 15%;
     }
     @keyframes animatetop {
       from {top: -500px; opacity: 0}
