@@ -37,7 +37,7 @@ class Game {
     if($(event.target).hasClass('flipped')) {
       return;
     }
-    $(event.target).toggle().addClass('flipped');
+    $(event.target).fadeOut(250).addClass('flipped');
 
     if (this.firstCardClicked === null) {
       music.startAudio('click');
@@ -70,7 +70,7 @@ class Game {
   }
   hideBothCards() {
     music.startAudio('cardover');
-    $('.flipped').toggle().removeClass('flipped');
+    $('.flipped').fadeIn(250).removeClass('flipped');
     this.firstCardClicked = null;
     this.secondCardClicked = null;
     $('.game-area').on('click', '.back', this.cardClicked);
