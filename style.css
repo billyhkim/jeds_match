@@ -7,9 +7,9 @@ body {
   background-size: cover;
   background-position: center;
   opacity: 1;
-  transition: 1.5s opacity ease-in-out;
+  transition: .7s opacity ease-in-out;
 }
-body.fadeout {
+.body-fadein {
   opacity: 0;
   transition: none;
 }

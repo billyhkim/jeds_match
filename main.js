@@ -10,7 +10,7 @@ function startApp(){
   game.renderCards();
   $('.game-area').on('click', '.back', game.cardClicked);
   $('.reset-btn').click(stats.gameReset);
-  $('body').removeClass('fadeout');
+  setTimeout(bodyFadeIn, 250);
 
   $('.audio-play').click(() => {
     music.startAudio('theme');
@@ -25,4 +25,8 @@ function startApp(){
   $('#about-btn').click(() => $('#my-modal').css('display', 'block'));
   $('.close').click(() => $('#my-modal').css('display', 'none'));
   $('.close').click(() => $('#win-modal').css('display', 'none'));
+}
+
+function bodyFadeIn() {
+  $('.body-fadein').removeClass('body-fadein');
 }
