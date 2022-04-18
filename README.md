@@ -1,5 +1,5 @@
 # Jed's Match
-* Live Demo: __https://jedsmatch.billyhkim.dev__
+* Live Demo: __https://jedsmatch.billyhkim.com__
 
 ![](jeds_match.gif)
 <hr/>
